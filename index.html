@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
+
+    <title>Tugas 2 Form Pendaftaran Ekstrakurikuler</title>
+</head>
+<body>
+    <div class="container">
+        <form action="" class="form-pend" onsubmit="return validateFormPend()">
+            <fieldset>
+                <legend>Form Pendaftaran Ekstrakurikuler</legend>
+                <p>
+                    <label for="nama">Nama Lengkap:</label><br>
+                    <input type="text" name="nama" id="nama" placeholder="Nama Anda">
+                </p>
+                <p>
+                    <label for="tanggallahir">Tanggal Lahir:</label><br>
+                    <input type="date" name="tanggal" id="tanggallahir">
+                </p>
+                <p>
+                    <label for="kelas">Kelas:</label><br>
+                    <select name="kelas" id="kelas">
+                        <option value="Kelas 7">Kelas 7</option>
+                        <option value="Kelas 8">Kelas 8</option>
+                        <option value="Kelas 9">Kelas 9</option>
+                    </select>
+                </p>
+                <p>
+                    <label for="alamat">Alamat:</label><br>
+                    <textarea name="alamat" id="alamat" placeholder="Masukkan alamat anda"></textarea>
+                </p>
+                <p>
+                    <label for="tele">No. HP:</label><br>
+                    <input type="tel" name="tele" id="tele" pattern="+62 - [0-9]{3} - [0-9]{4} - [0-9]{3}" value="+62">
+                </p>
+                <p>
+                    <label for="ekskul">Ekstrakurikuler:</label><br>
+                    <select name="ekskul" id="ekskul"
+                        <option value="futsal">Futsal</option>
+                        <option value="voli">Voli</option>
+                        <option value="biologi">Biologi</option>
+                        <option value="bola Basket">Bola Basket</option>
+                        <option value="bahasa inggris">Bahasa Inggris</option>
+                    </select>
+                </p>
+                <p>
+                    <button type="submit" id="buttonsub" class="formbutton">Submit</button>
+                </p>
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>
